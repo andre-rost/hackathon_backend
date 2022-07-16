@@ -7,6 +7,7 @@ const list_all = (req, res) => {
 }
 
 const me = (req, res) => {
+    db.query("SELECT id FROM users ORDER BY RANDOM;")
     res.send("This is me")
 }
 
