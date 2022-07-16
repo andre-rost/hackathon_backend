@@ -7,7 +7,7 @@ const list_all = (req, res) => {
 }
 
 const me = (req, res) => {
-    db.query("SELECT * FROM users WHERE id = 1 ORDER BY RAND();")
+    db.query("SELECT id FROM ORDER BY RAND();")
     res.send("This is me")
 }
 
